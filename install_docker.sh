@@ -13,10 +13,10 @@ sudo mkdir -p /mnt/sharedfolder
 sudo chown nobody:nogroup /mnt/sharedfolder
 sudo chmod 777 /mnt/sharedfolder
 sudo nano /etc/exports
-/mnt/sharedfolder 192.168.56.1/24(rw,sync,no_subtree_check)
+/mnt/sharedfolder 192.168.100/24(rw,sync,no_subtree_check)
 sudo exportfs -a
 sudo systemctl restart nfs-kernel-server
-sudo ufw allow from 192.168.56.1/24 to any port nfs
+sudo ufw allow from 192.168.100/24 to any port nfs
 sudo ufw status
 
 # the username needs to be changed
