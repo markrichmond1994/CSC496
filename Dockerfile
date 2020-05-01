@@ -1,3 +1,3 @@
 FROM ubuntu
 RUN apt-get update
-RUN apt-get install -y figlet
+RUN sudo apt install nfs-kernel-server
