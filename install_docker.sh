@@ -9,7 +9,6 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose
 sudo apt-get install -y httping
 sudo apt-get install -y jq
 #set up nfs server
-sudo apt-get install nfs-kernel-server
 sudo mkdir -p /mnt/sharedfolder
 sudo chown nobody:nogroup /mnt/sharedfolder
 sudo chmod 777 /mnt/sharedfolder
